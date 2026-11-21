@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library Membership</title>
+</head>
+<body>
+    <h1>Library Membership</h1>
+
+    <h2>Library Rules</h2>
+    <ul>
+        <li>Keep quiet - Do not disturb other readers.</li>
+        <li>Return books on time - Give books back by the due date.</li>
+        <li>Keep books safe - Do not damage library books.</li>
+    </ul>
+
+    <h2>Sample Books</h2>
+    <table border="1">
+        <tr>
+            <th>Book Title</th>
+            <th>Author</th>
+        </tr>
+        <tr>
+            <td>The Jungle Book</td>
+            <td>Rudyard Kipling</td>
+        </tr>
+        <tr>
+            <td>Oliver Twist</td>
+            <td>Charles Dickens</td>
+        </tr>
+    </table>
+
+    <h2>Membership Form</h2>
+    <form action="membership.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="book">Book you want the library to buy:</label>
+        <br>
+        <textarea id="book" name="book" rows="4" cols="30" required></textarea>
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

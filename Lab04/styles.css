@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.profile-box {
+    width: 320px;
+    height: 180px;
+    border: 3px solid green;
+    padding: 25px;
+    margin: 35px;
+}
+
+.profile-box p {
+    background-color: #fff9c4;
+    font-size: 18px;
+}
+
+/* Total width = 320 + 25 + 25 + 3 + 3 = 376px. */
+
+.menu-bar {
+    background: linear-gradient(to right, #ff512f, #dd2476);
+    color: white;
+    padding: 12px;
+    box-shadow: 4px 4px 8px gray;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-list li {
+    margin-right: 25px;
+    position: relative;
+}
+
+.menu-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #4a4a4a;
+    padding: 10px;
+    min-width: 130px;
+}
+
+.dropdown-menu li {
+    margin: 8px 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
